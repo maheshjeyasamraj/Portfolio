@@ -1,0 +1,232 @@
+/* General Reset & Typography */
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+}
+
+/* Navbar */
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  margin: 0 8px;
+  transition: color 0.9s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0d6efd;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+}
+
+/* Hero Section */
+#hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('https://images.unsplash.com/photo-1506765515384-028b60a970df') center/cover no-repeat;
+  background-attachment: fixed;
+}
+
+#hero h1 {
+  font-size: 4rem;
+  animation: fadeInDown 1s ease-out;
+}
+
+#hero p, #hero h5 {
+  animation: fadeInUp 1.5s ease-out;
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Section Headings */
+section h2 {
+  font-size: 2.5rem;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+section h2::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background: #0d6efd;
+  display: block;
+  margin: 10px auto 0;
+}
+
+/* About */
+#about img {
+  max-width: 100%;
+  border: 5px solid #fff;
+  transition: transform 0.4s ease;
+}
+
+#about img:hover {
+  transform: scale(1.05);
+}
+
+/* Services */
+#services .border {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#services .border:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/* Glass Card Component */
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  padding: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+}
+
+.card-image {
+  width: 100%;
+  height: 180px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Contact Form */
+form input, form textarea {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  transition: border 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #0d6efd;
+  outline: none;
+}
+
+/* Button Styling */
+.btn-outline-primary {
+  border-color: #0d6efd;
+  color: #0d6efd;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #aaa;
+  padding: 40px 0;
+  text-align: center;
+}
+
+/* Project Gallery */
+.project-gallery {
+  background: linear-gradient(135deg, #000, #0f0f10);
+  padding: 60px 0;
+}
+
+.project-gallery .card-content {
+  padding: 20px;
+}
+
+.project-gallery h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.project-gallery .glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.05);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project-gallery .glass-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.15);
+}
+
+.project-gallery .card-image {
+  height: 160px;
+}
+
+.project-gallery .card-content h5 {
+  font-size: 1.2rem;
+  margin-top: 15px;
+}
+
+.project-gallery .btn-outline-light {
+  border-color: #fff;
+  color: #fff;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.project-gallery .btn-outline-light:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.project-gallery .badge {
+  font-size: 0.75rem;
+  padding: 6px 10px;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 2.5rem;
+  }
+
+  #hero h5, #hero p {
+    font-size: 1rem;
+  }
+}
+
