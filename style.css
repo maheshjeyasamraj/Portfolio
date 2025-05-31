@@ -1,7 +1,13 @@
 /* General Reset & Typography */
+
+
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Adjust if your navbar height is different */
 }
+
+
+
 
 
 body {
