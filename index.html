@@ -305,62 +305,104 @@
 
 
 
+<!-- Meta Ads Campaign Results Section -->
+<section class="py-5" style="background: linear-gradient(135deg, #0f0f10, #1a1a1d); overflow: hidden;">
+  <div class="container">
+    <h2 class="text-center text-white fw-bold mb-2" style="font-size: 2rem;">Meta Ads Campaign Results</h2>
+    <p class="text-center text-secondary mb-4">Real performance numbers from lead generation campaigns for the brands.</p>
 
-
-
-
-<!-- WordPress Projects Strip with Auto-Scroll -->
-<section class="py-4" style="background: linear-gradient(135deg, #000, #0f0f10);">
-  <div class="container"
-    <h2 class="text-center text-white mb-3 fw-bold"> Website Projects </h2>
-    <p class="text-center text-secondary mb-4">Real websites built for brands using WordPress and etc, Elementor, and conversion-focused design.</p>
-
-    <div id="projectScroller" class="d-flex gap-3 overflow-auto px-2" 
-         style="scroll-behavior: smooth; white-space: nowrap; height: 100px;">
-
-      <!-- Project 1 -->
-      <a href="https://vivafit.life" target="_blank" 
-         class="d-flex align-items-center px-3 rounded shadow-sm text-decoration-none flex-shrink-0"
-         style="background-color: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); min-width: 300px; height: 100px;">
-        <img src="https://vivafit.life/wp-content/uploads/2024/01/logo.png" alt="Vivafit" 
-             style="height: 60px; object-fit: contain; margin-right: 15px;">
-        <div>
-          <h6 class="text-white mb-1 fw-bold">Vivafit.life</h6>
-          <small class="text-light">Booking + Blog</small>
+    <div class="row text-center g-4">
+      <div class="col-sm-6 col-md-3">
+        <div class="card bg-dark text-white border-0 shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title text-success">₹28</h5>
+            <p class="card-text small">Cost Per Lead</p>
+          </div>
         </div>
-      </a>
-
-      <!-- Project 2 -->
-      <a href="https://fitnessfactory.fit" target="_blank" 
-         class="d-flex align-items-center px-3 rounded shadow-sm text-decoration-none flex-shrink-0"
-         style="background-color: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); min-width: 300px; height: 100px;">
-        <img src="https://fitnessfactory.fit/wp-content/uploads/2024/01/logo.png" alt="FitnessFactory" 
-             style="height: 60px; object-fit: contain; margin-right: 15px;">
-        <div>
-          <h6 class="text-white mb-1 fw-bold">FitnessFactory.fit</h6>
-          <small class="text-light">Galleries + Forms</small>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="card bg-dark text-white border-0 shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title text-primary">452+</h5>
+            <p class="card-text small">Total Leads</p>
+          </div>
         </div>
-      </a>
-
-      <!-- Project 3 -->
-      <a href="http://yorafitness.com/" target="_blank" 
-         class="d-flex align-items-center px-3 rounded shadow-sm text-decoration-none flex-shrink-0"
-         style="background-color: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); min-width: 300px; height: 100px;">
-        <img src="https://yorafitness.com/wp-content/uploads/2024/01/logo.png" alt="YoraFitness" 
-             style="height: 60px; object-fit: contain; margin-right: 15px;">
-        <div>
-          <h6 class="text-white mb-1 fw-bold">YoraFitness.com</h6>
-          <small class="text-light">Woo + Testimonials</small>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="card bg-dark text-white border-0 shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title text-warning">98,000+</h5>
+            <p class="card-text small">People Reached</p>
+          </div>
         </div>
-      </a>
-
-      
-
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="card bg-dark text-white border-0 shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title text-danger">₹12,600</h5>
+            <p class="card-text small">Total Spend</p>
+          </div>
+        </div>
+      </div>
     </div>
+
+    
   </div>
 </section>
 
 
+<!-- CSS -->
+<style>
+  .project-card {
+    display: flex;
+    align-items: center;
+    min-width: 300px;
+    height: 100px;
+    padding: 0 20px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0);
+    transition: all 0.3s ease-in-out;
+    flex-shrink: 0;
+  }
+
+  .project-card:hover {
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  .project-card img {
+    height: 55px;
+    width: auto;
+    margin-right: 15px;
+    object-fit: contain;
+  }
+
+  .project-card h6 {
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+  .project-card small {
+    color: #bbb;
+  }
+
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+
+  /* Responsive for smaller devices */
+  @media (max-width: 576px) {
+    .project-card {
+      min-width: 250px;
+      padding: 10px;
+    }
+  }
+</style>
 
 
 
@@ -421,16 +463,57 @@
 
 
 
-
-<!-- Home Page Floating Button -->
+<!-- Floating Home Icon Button (No Background, Let's Talk Blue Glow + Pulse) -->
 <a href="index.html" 
-   class="btn btn-primary position-fixed bottom-0 end-0 mt-4 rounded-circle shadow-lg" 
-   style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;"
+   class="home-icon-btn position-fixed bottom-0 end-0 mb-4 me-4" 
    data-bs-toggle="tooltip" 
    data-bs-placement="left" 
    title="Go to Home Page">
-  <i class="fas fa-home fa-lg"></i>
+  <i class="fas fa-home fa-2x"></i>
 </a>
+
+<style>
+  .home-icon-btn {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    z-index: 1000;
+  }
+
+  .home-icon-btn i {
+    padding: 12px;
+    border-radius: 50%;
+    transition: 0.4s;
+    position: relative;
+  }
+
+  /* Glow on hover (Let's Talk Blue) */
+  .home-icon-btn:hover i {
+    box-shadow: 0 0 8px #4ea8f1, 0 0 16px #4ea8f1, 0 0 24px #4ea8f1;
+    color: #4ea8f1;
+    background: transparent;
+  }
+
+  /* Pulse animation with Let's Talk Blue */
+  .home-icon-btn i::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+    pointer-events: none;
+  }
+
+  
+  }
+</style>
+
+
+
 
 
 
