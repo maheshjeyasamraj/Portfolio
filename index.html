@@ -103,7 +103,7 @@
 
 
   <!-- About Section -->
-  <section id="about" class="bg-light" style="padding-top: 20px; padding-bottom: 170px; margin-top: 100px;">
+  <section id="about" class="bg-light" style="padding-top: 20px; padding-bottom: 80px; margin-top: 100px;">
   <div class="container">
     <div class="row align-items-center g-5">
       
@@ -147,102 +147,81 @@
 </section>
 
 
-
-<!-- Modern & Stylish Digital Marketing Tips Strip -->
-<div class="mt-4">
-  <div class="scroller-wrapper-modern rounded-4 shadow-xl">
-    <div class="scroller-track-modern d-flex align-items-center gap-4">
-      <!-- Tip Cards -->
-      <div class="tip-card-modern">Digital Marketing Trends 2025</div>
-      <div class="tip-card-modern">Instagram Growth Tips</div>
-      <div class="tip-card-modern">Get More Leads Online</div>
-      <div class="tip-card-modern">Secrets to Landing Page Success</div>
-      <div class="tip-card-modern">Build Your Brand Organically</div>
-      <div class="tip-card-modern">Top Marketing Strategies</div>
-      <div class="tip-card-modern">Paid Ads vs Organic Reach</div>
-      <div class="tip-card-modern">30-Day Content Plan</div>
-      <div class="tip-card-modern">Marketing Funnel Guide</div>
-      <div class="tip-card-modern">Omnichannel Marketing Power</div>
-      <div class="tip-card-modern">Meta Ads for Beginners</div>
-      <div class="tip-card-modern">Google My Business Tips</div>
-      <div class="tip-card-modern">WhatsApp Marketing Tricks</div>
-      <div class="tip-card-modern">YouTube Shorts for Business</div>
-      <div class="tip-card-modern">LinkedIn for Lead Gen</div>
-      <div class="tip-card-modern">Best Marketing Tools 2025</div>
-      <div class="tip-card-modern">Email Marketing Basics</div>
-      <div class="tip-card-modern">Facebook Pixel Setup Guide</div>
-      <div class="tip-card-modern">Retargeting Ad Secrets</div>
-      <div class="tip-card-modern">Understand Your Analytics</div>
+<!-- GitHub-Style Light Theme Tips Strip -->
+  <div style="margin-top: 10px;"></div>
+  <div class="github-style-strip rounded-4 shadow-sm">
+    <div class="github-scroller d-flex align-items-center gap-3">
+      <!-- Tip Cards with Emojis -->
+      <div class="github-tip">📈 Digital Marketing Trends 2025</div>
+      <div class="github-tip">📸 Instagram Growth Tips</div>
+      <div class="github-tip">🎯 Get More Leads Online</div>
+      <div class="github-tip">🖥️ Landing Page Secrets</div>
+      <div class="github-tip">🌱 Build Brand Organically</div>
+      <div class="github-tip">🧠 Smart Marketing Tactics</div>
+      <div class="github-tip">🤖 Paid Ads vs Organic</div>
+      <div class="github-tip">🗓️ 30-Day Content Plan</div>
+      <div class="github-tip">🛒 Funnel Optimization Guide</div>
+      <div class="github-tip">📊 Analytics Demystified</div>
+      <div class="github-tip">💬 WhatsApp Marketing Tricks</div>
+      <div class="github-tip">🎥 YouTube Shorts Strategy</div>
+      <div class="github-tip">💼 LinkedIn for B2B Leads</div>
+      <div class="github-tip">🧰 Best Tools for 2025</div>
+      <div class="github-tip">✉️ Email Campaign Tips</div>
+      <div class="github-tip">🎯 Retargeting Ad Hacks</div>
+      <div class="github-tip">📍 Google Business Boost</div>
     </div>
   </div>
 </div>
 
 <style>
-  .scroller-wrapper-modern {
-    background: linear-gradient(270deg, #0f0f0f, #1a1a1d, #0f0f0f);
-    background-size: 600% 600%;
-    animation: gradientBG 12s ease infinite;
+  .github-style-strip {
+    background: #f9f9f9;
+    border: 1px solid #e1e4e8;
+    padding: 24px 16px;
     overflow: hidden;
     position: relative;
-    padding: 26px 20px;
-    border-radius: 1.5rem;
-    box-shadow: 0 0 30px rgba(0, 255, 255, 0.08);
+    border-radius: 1rem;
   }
 
-  @keyframes gradientBG {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-
-  .scroller-track-modern {
-    white-space: nowrap;
-    animation: scroll-horizontal-modern 35s linear infinite;
+  .github-scroller {
     display: inline-flex;
+    white-space: nowrap;
+    animation: scroll-linear 40s linear infinite;
   }
 
-  .scroller-wrapper-modern:hover .scroller-track-modern {
+  .github-style-strip:hover .github-scroller {
     animation-play-state: paused;
   }
 
-  .tip-card-modern {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 260px;
-    height: 90px;
-    padding: 0 24px;
-    margin: 6px 0;
-    color: #ffffff;
-    font-weight: 600;
-    font-size: 1rem;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 20px;
-    backdrop-filter: blur(12px);
-    box-shadow: 0 0 25px rgba(0, 255, 255, 0.1);
-    transition: all 0.3s ease-in-out;
+  .github-tip {
+    display: inline-block;
+    background: #ffffff;
+    border: 1px solid #d1d5da;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: #24292e;
+    font-weight: 500;
+    box-shadow: 0 1px 3px rgba(27, 31, 35, 0.04);
+    transition: transform 0.3s ease;
     flex-shrink: 0;
   }
 
-  .tip-card-modern:hover {
-    transform: scale(1.07);
-    background: rgba(0, 255, 255, 0.1);
-    box-shadow: 0 0 40px rgba(0, 255, 255, 0.4);
-    border-color: rgba(0, 255, 255, 0.4);
+  .github-tip:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
+    border-color: #c6cbd1;
   }
 
-  @keyframes scroll-horizontal-modern {
+  @keyframes scroll-linear {
     0% { transform: translateX(0); }
     100% { transform: translateX(-100%); }
   }
 
   @media (max-width: 576px) {
-    .tip-card-modern {
-      min-width: 200px;
-      height: 80px;
-      font-size: 0.9rem;
-      padding: 0 16px;
+    .github-tip {
+      font-size: 0.85rem;
+      padding: 8px 14px;
     }
   }
 </style>
@@ -259,9 +238,8 @@
 
 
 
-
 <!-- Services Section -->
-<section id="services" class="py-4 bg-light">
+<section id="services" class="py-5 bg-light">
   <div class="container text-center" ">
     <h2 class="mb-5 fw-bold">Your Goal, My Focus</h2>
     
